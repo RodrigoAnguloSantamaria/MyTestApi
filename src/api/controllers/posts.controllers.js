@@ -9,9 +9,11 @@ const getPosts = async (req, res)=>{
       
         
         if (all.length === 0){
-            res.send("No existen post a mostrar")
+           return res.send("No existen post a mostrar");
+        }else{
+            return res.status(200).json(all);
         }
-        return res.status(200).json(all);
+        
     } catch (error) {
         return res.status(500).json({message:`error de servidor ${error}`});
     }
