@@ -42,7 +42,7 @@ app.use("/users", usersRouter);
 app.use("/post", postRouter);
 app.use("/word", wordRouter);
 
-console.log(process.env.DB_URL);
+c; //onsole.log(process.env.DB_URL);
 app.listen(PORT, () =>
   console.log(
     `nuevo servidor escuchando en puerto: ${PORT}  -- muestra en consola`
