@@ -13,7 +13,7 @@ const wordRouter = require("./src/api/routes/word.routes");
 const PORT = process.env.PORT || 54321;
 const app = express();
 
-connect();
+//connect();
 app.use(
   cors({
     origin: "*",
